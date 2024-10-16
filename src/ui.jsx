@@ -91,7 +91,7 @@ export const PipelineUI = () => {
         },
         [reactFlowInstance,addNode,getNodeID,onEdgesChange]
     );
-
+  
     const onDragOver = useCallback((event) => {
         event.preventDefault();
         event.dataTransfer.dropEffect = 'move';
@@ -100,6 +100,7 @@ export const PipelineUI = () => {
     return (
         <>
         <div ref={reactFlowWrapper} className='w-full h-screen min-h-[70vh]' >
+          {/* <button className='my-20' onClick={()=>{console.log(nodes,edges)}}>getnodesandedges</button> */}
             <ReactFlow
                 nodes={nodes}
                 edges={edges}

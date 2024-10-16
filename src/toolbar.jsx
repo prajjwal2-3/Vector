@@ -9,8 +9,8 @@ import { TbApi } from "react-icons/tb";
 export const PipelineToolbar = () => {
 
     return (
-        <div className='p-2 grid gap-2  fixed z-[5] w-fit'>
-            <div className='grid grid-flow-col gap-2'>
+        <div className='p-2 grid gap-2 bottom-0   fixed z-[5] w-full'>
+            <div className='grid grid-flow-col mx-auto w-fit gap-2'>
                 <DraggableNode type='customInput' label='Input' icon={<MdInput/>}/>
                 <DraggableNode type='llm' label='LLM' icon={<LuBrainCircuit/>}/>
                 <DraggableNode type='customOutput' label='Output' icon={<MdOutlineInput/>} />

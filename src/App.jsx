@@ -6,8 +6,9 @@ function App() {
   return (
     <div className='bg-gradient-to-br from-[#0F0923] to-[#340B85]'>
       <PipelineToolbar />
-      <PipelineUI />
       <SubmitButton />
+      <PipelineUI />
+      
     </div>
   );
 }
